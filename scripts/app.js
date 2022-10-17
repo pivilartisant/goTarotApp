@@ -46,7 +46,7 @@ let response;
 //cards will hold my json data
 
 //My request URL
-const requestCardURL = 'goTarotApp/data/cardInfo.json';
+const requestCardURL = 'data/cardInfo.json';
 btn.addEventListener('click', () => {
   getCards(requestCardURL);
 });
