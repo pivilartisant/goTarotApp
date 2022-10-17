@@ -1,0 +1,92 @@
+
+Notes, all my functions work right now, the random number generate corresponds to the card 
+
+Problems : 
+-> I have arrays with multiple entries, I want these enteries to be randomized based on the array.length
+  FIX : I could potentionaly store my render cards data into global variables than use an array .length randomizer 
+    Resolved X with : 
+              function randomInArray(myArr){
+              return ( Math.floor(Math.random() * myArr.length));
+}
+
+-> I also need to find a way to seperate each item in my arrays by some space notably in the keywordInfo
+  FIX : mayeb use the array.splice(), I also need to make each item of my array have an uppercase
+    -> for (let info of cardKeywordsInfo.split(",")){
+          console.log(info += ", ")
+        } --> permet de séparer les mots avec une virgule et un espace 
+
+    -> for (let info of cardKeywordsInfo.split(",")){
+          console.log(info.charAt(0).toUpperCase() + info.slice(1))
+        } ---> Permet de capitaliser la lettre à l'index 0 de chaque str puis de remplacer à partir de la 1 lettre de mon ancienne str
+
+        Resolved X with :
+          function formatData(myArr, destination){
+            for (let info of myArr){ 
+              //for every element in my array, push this element to the keywordsArr s well and seperating with a space and capitalizing the first letter of each element 
+              destination.push(" " + info.charAt(0).toUpperCase() + info.slice(1))
+            }
+          }
+
+              NOTE : I had to deal with a supplementary problem with was initializing to 0 my array at each spread but that was fixed quickly enough
+
+-> in the same way each card has a meaning upright/reversed so light and shadow in my json data. 
+    I would need for each card that appears to have in one or the two positions and dynamically displayed the meaning corresponding (which is displayed in an array).
+     FIX  : This is going to require some css manipulation, most likely translate or rotate 180° than add an if statement
+
+        • The first thing i need to do is get my light and shadow data
+        • So once i set the path, i need to choose bewteen the light or shadow; this will be randomized. for that i'll need to make a function that helps me pick one of the two 
+        • So i got this function working and now i need to have it call another function which will add a class to my img and reverse it or not 
+
+        Resolved X with :
+            function cardMeaningRotation(data,num){
+                let math = Math.round(Math.random())
+
+                if(!math){
+                  cardPosition = "Upright";
+                  setCardClass()
+                  return `${data.cards[num].meanings.light}`;
+                } else { 
+                  cardPosition = "Reversed";
+                  setCardClass()
+                  return`${data.cards[num].meanings.shadow}`;
+                }
+            }
+
+            function setCardClass(){
+            
+              if (cardPosition == "Upright"){
+                cardImg.setAttribute('class','upright__card')
+                console.log('UP')
+              } else {
+                cardImg.setAttribute('class','reversed__card')
+                console.log('R')
+              }
+            }
+ 
+--> After careful examination, it seems that my numInArr doesn't pass the right result when calling the meangins 
+    FIX : pass in the correct parameters OR create another specific function 
+        Resolved x with : calling my great function again with the specific array path
+
+
+LOOK INTO 
+
+CORS CROSS-ORGIN ERROR HTTP (when opening the html)
+
+IMPLEMENT LATER 
+
+-> After each spread implement an option to ask another question depending on my questions to ask
+    FIX : We can have and button than ask if you want further information, if clicked than it can prompt two questions 
+        -> instead of adding this complex functionnality, I think i'll just disply the questions to ask object in my json data 
+    
+-> Feature could be to output one meaning and have an option to consult the full data and another page  
+    FIX : This is an advanced feature and will be implemented later on in the project 
+
+
+
+
+
+
+
+
+
+
