@@ -59,7 +59,6 @@ getCards(requestCardURL);
   btn.addEventListener('click', () => {
     assignCards(randomCard());
   });  
-  
 }
 
 /*========================
@@ -116,7 +115,6 @@ Creating my card object
 /*==========================
 Rendering my card
 ============================*/
-
     card.renderImg(card.img)
     card.renderData(cardName, card.name)
     card.renderData(cardArcana, card.arcana)
