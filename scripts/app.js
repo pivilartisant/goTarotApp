@@ -94,6 +94,14 @@ function assignCards(num){
 
         this.img =  `./data/cardImg/${img}`;
       }
+      clearData(elem1, elem2, elem3, elem4, elem5){
+        cardImg.src ="";
+        elem1.textContent = "";
+        elem2.textContent = "";
+        elem3.textContent = "";
+        elem4.textContent = "";
+        elem5.textContent = "";
+      }
       renderData(elem, cardData){
         elem.textContent = cardData
         }
@@ -115,6 +123,8 @@ Creating my card object
 /*==========================
 Rendering my card
 ============================*/
+    card.clearData(cardName,cardArcana,cardFortune,cardKeywords,cardMeaning)
+    
     card.renderImg(card.img)
     card.renderData(cardName, card.name)
     card.renderData(cardArcana, card.arcana)
