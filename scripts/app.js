@@ -49,11 +49,6 @@ let response;
 const requestCardURL = 'data/cardInfo.json';
 
 getCards(requestCardURL);
-btn.addEventListener('click', () => {
-  
-});
-
-
 
 //getCards assigns my data to a global variable
   async function getCards(url){
