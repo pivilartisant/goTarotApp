@@ -47,8 +47,10 @@ let response;
 
 //My request URL
 const requestCardURL = 'data/cardInfo.json';
+
+getCards(requestCardURL);
 btn.addEventListener('click', () => {
-  getCards(requestCardURL);
+  
 });
 
 
@@ -59,8 +61,9 @@ btn.addEventListener('click', () => {
   response = await fetch(request)
   data = await response.json()
 
-  
-  assignCards(randomCard());
+  btn.addEventListener('click', () => {
+    assignCards(randomCard());
+  });  
   
 }
 
