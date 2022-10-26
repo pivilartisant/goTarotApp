@@ -1,11 +1,132 @@
-#cardImg{
+*{
+  margin: 0px;
+  padding: 0px;
+  --backgroundColor : black;
+  --fontColor : black;
+  --spookyOrange : #ff9900;
+}
+
+
+
+
+body{
+background-color: var(--backgroundColor);
+}
+
+/*=====
+NAVBAR
+======*/
+
+.nav-container{
+  height : 64px;
+  min-width: 100%;
+
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-container{
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 20px;
+}
+
+.title{
+  color: var(--fontColor);
+  font-family: 'Happy Halloween', sans-serif;
+  font-size: 34px;
+
+  text-shadow: 1px 1px 10px #ff9900;
+}
+
+.nav-link-container {
+  height: 100vh;
+  width: 100%;
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  /* transition: opacity 0.3s ease-in-out; */
+
+  overflow: hidden;
+  background-color: var(--fontColor);
+
+  z-index: auto;
+}
+
+.nav-list{
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+  position: relative;
+  left: 0px;
+
+  list-style: none;
+
+  font-family: 'Happy Halloween', sans-serif;
+  font-size: 24px;
+
+  background-color: var(--backgroundColor);
+}
+
+.nav-list li a {
+  color: var(--spookyOrange);
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+.country-selection {
+  display: none;
+}
+
+.menu-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-right: 20px;
+  z-index: 1;
+}
+
+.menu-icon{
+font-size: 36px;
+}
+
+.active{
+  transform: translateX(0%);
+}
+/*=====
+MAIN
+=======*/
+
+.card-name, .card-arcana, .card-meaning, .card-keywords, .card-fortune{
+  color: white
+}
+
+.upright__card{
     width:250px;
     height: auto;
-
 }
 
 .reversed__card{
-    -webkit-transform:rotate(180deg);
+  width:250px;
+  height: auto;
+
+  -webkit-transform:rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
