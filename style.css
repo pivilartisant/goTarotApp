@@ -120,11 +120,15 @@ MAIN
 .upright__card{
     width:250px;
     height: auto;
+
+    z-index: -1;
 }
 
 .reversed__card{
   width:250px;
   height: auto;
+
+  z-index: -1;
 
   -webkit-transform:rotate(180deg);
   -moz-transform: rotate(180deg);
