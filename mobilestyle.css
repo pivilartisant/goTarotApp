@@ -186,7 +186,7 @@ MAIN
   text-shadow: 1px 1px 5px var(--fontColor);
 }
 
-.spread-btn:focus{
+.spread-btn:active{
   background-color: aqua;
 }
 
