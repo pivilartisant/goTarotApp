@@ -118,6 +118,8 @@ MAIN
 }
 
 .upright__card{
+  position: relative;
+
     width:250px;
     height: auto;
 
@@ -125,6 +127,8 @@ MAIN
 }
 
 .reversed__card{
+position: relative;
+
   width:250px;
   height: auto;
 
