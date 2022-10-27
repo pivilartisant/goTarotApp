@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spooky Tarot App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pivi's spooky tarot</title>
+    <link rel="stylesheet" href="mobilestyle.css">
     <!-- <link href="http://fonts.cdnfonts.com/css/happy-halloween" rel="stylesheet"> -->
 </head>
 <body>
@@ -14,11 +14,11 @@
 
 <nav class="nav-container">
     <div class="title-container">
-        <h1 class="title">Spooky Tarot App</h1>
+        <h1 class="title">Spoooky Tarot</h1>
     </div>
 l
     <div class="menu-container" id="burger-menu">
-        <p class="menu-icon" id="menu-icon">🕸️</p>
+        <p class="menu-icon" id="menu-icon">🎃</p>
     </div>
 
     <div class="nav-link-container" id="nav-link">
@@ -31,6 +31,40 @@ l
       </div>
 </nav>
 
+<main class="main-container">
+
+    <div class="card-container">
+
+        <div class="card-img-container">
+            <img class="card-img" id="cardImg"></p>
+        </div>
+
+        <div class="card-name-container card-info">
+            <p class="card-name" id="cardName"></p>
+        </div>
+
+        <div class="card-arcana-container card-info">
+            <p class="card-arcana" id="cardArcana"></p>
+        </div>
+
+        <div class="card-fortune-container card-info">
+            <p class="card-fortune" id="cardFortune"></p>
+        </div>
+
+        <div class="card-keywords-container card-info">
+            <p class="card-keywords" id="cardKeywords"></p>
+        </div>
+
+        <div class="card-meaning-container card-info">
+            <p class="card-meaning" id="cardMeaning"></p>
+        </div>
+
+    </div>
+
+    <div class="button-container">
+        <button class="spread-btn" id="spread">Generate Spread 🕷️</button>
+    </div>
+</main>
 </body>
 <script src="scripts/app.js"></script>
 <script src="scripts/burgerMenu.js"></script>

@@ -44,7 +44,7 @@ NAVBAR
 .title{
   color: var(--fontColor);
   font-family: 'Happy Halloween', sans-serif;
-  font-size: 34px;
+  font-size: 30px;
 
   text-shadow: 1px 1px 10px #ff9900;
 }
@@ -93,8 +93,6 @@ NAVBAR
   letter-spacing: 5px;
 }
 
-
-
 .menu-container{
   display: flex;
   flex-direction: column;
@@ -115,6 +113,63 @@ font-size: 36px;
 MAIN
 =======*/
 
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.card-container{
+
+  max-width : 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.card-img-container{
+  margin : 40px 0px 40px 0px;
+}
+
+.card-info p {
+
+  margin: 10px 0px 10px 0px;
+
+  text-align: center;
+  letter-spacing: 1.6px;
+
+  font-family: 'Happy Halloween', sans-serif;
+
+  color: var(--spookyOrange);
+}
+
+.spread-btn{
+
+  width: 200px;
+  height: 40px;
+
+  margin: 20px 0px 20px 0px;
+
+  font-size: 18px;
+  font-family: 'Happy Halloween', sans-serif;
+
+  background-color: transparent;
+  /* border: 3px solid black; */
+  border: none;
+
+  border-radius: 30px;
+  color: black;
+
+  /* box-shadow: 1px 1px 10px #ff9900; */
+  text-shadow: 1px 1px 5px #ff9900;
+
+}
+
 .card-name, .card-arcana, .card-meaning, .card-keywords, .card-fortune{
   color: white
 }
@@ -126,6 +181,8 @@ MAIN
     height: auto;
 
     z-index: 0;
+
+    box-shadow : 0px 0px 40px 1px #FF9900;
 }
 
 .reversed__card{
@@ -140,4 +197,6 @@ MAIN
 
   z-index: 0;
   position: relative;
+
+  box-shadow : 0px 0px 40px 1px #FF9900;
 }

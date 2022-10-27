@@ -1,45 +1,43 @@
 /*======================
 Creating my DOM elements
 ========================*/
-// const title = document.createElement('h1');
-//   title.textContent = `Spooky Tarot App`;
-//   document.body.appendChild(title);
 
-  const btn = document.createElement('button');
-  btn.innerHTML = "Generate spread"
-  btn.setAttribute('id','spread');
-  document.body.appendChild(btn);
+  const btn = document.getElementById('spread');
+  // btn.innerHTML = "Generate spread"
+  // btn.setAttribute('id','spread');
+  // btn.setAttribute('class','spread-btn');
+  // document.body.appendChild(btn);
 
-const cardName = document.createElement('div');
-  cardName.setAttribute('id','cardName');
-  cardName.setAttribute('class','card-name');
-  document.body.appendChild(cardName)
+const cardName = document.getElementById('cardName');
+  // cardName.setAttribute('id','cardName');
+  // cardName.setAttribute('class','card-name');
+  // document.body.appendChild(cardName)
 
-const cardArcana = document.createElement('div');
-  cardArcana.setAttribute('id','cardArcana');
-  cardArcana.setAttribute('class','card-arcana');
-  document.body.appendChild(cardArcana)
+const cardArcana = document.getElementById('cardArcana');
+  // cardArcana.setAttribute('id','cardArcana');
+  // cardArcana.setAttribute('class','card-arcana');
+  // document.body.appendChild(cardArcana)
 
-const cardFortune = document.createElement('div');
-  cardFortune.setAttribute('id','cardFortune');
-  cardFortune.setAttribute('class','card-fortune');
-  document.body.appendChild(cardFortune)
+const cardFortune = document.getElementById('cardFortune');
+  // cardFortune.setAttribute('id','cardFortune');
+  // cardFortune.setAttribute('class','card-fortune');
+  // document.body.appendChild(cardFortune)
 
-const cardKeywords = document.createElement('div');
-  cardKeywords.setAttribute('id','cardKeywords');
-  cardKeywords.setAttribute('class','card-keywords');
-  document.body.appendChild(cardKeywords)
+const cardKeywords = document.getElementById('cardKeywords');
+  // cardKeywords.setAttribute('id','cardKeywords');
+  // cardKeywords.setAttribute('class','card-keywords');
+  // document.body.appendChild(cardKeywords)
 
-const cardMeaning = document.createElement('div');
-  cardMeaning.setAttribute('id','cardMeaning');
-  cardMeaning.setAttribute('class','card-meaning');
-  document.body.appendChild(cardMeaning)
+const cardMeaning = document.getElementById('cardMeaning');
+  // cardMeaning.setAttribute('id','cardMeaning');
+  // cardMeaning.setAttribute('class','card-meaning');
+  // document.body.appendChild(cardMeaning)
 
-const cardImg = document.createElement('img');
-  cardImg.setAttribute('id','cardImg');
-  cardImg.setAttribute('class','card-img');
+const cardImg = document.getElementById('cardImg')
+  // cardImg.setAttribute('id','cardImg');
+  // cardImg.setAttribute('class','card-img');
   // cardImg.src="./data/cardImg/c01.jpg";
-  document.body.appendChild(cardImg)
+  // document.body.appendChild(cardImg)
 
 /*===========================
 Declaring my global variables
@@ -107,8 +105,8 @@ function assignCards(num){
         elem4.textContent = "";
         elem5.textContent = "";
       }
-      renderData(elem, cardData){
-        elem.textContent = cardData
+      renderData(elem, str, cardData){
+        elem.textContent = str + cardData
         }
       renderImg (imgSrc){
         cardImg.src = imgSrc
@@ -131,11 +129,11 @@ Rendering my card
     card.clearData(cardName,cardArcana,cardFortune,cardKeywords,cardMeaning)
     
     card.renderImg(card.img)
-    card.renderData(cardName, card.name)
-    card.renderData(cardArcana, card.arcana)
-    card.renderData(cardFortune, card.fortune)
-    card.renderData(cardKeywords, card.keywordsArr)
-    card.renderData(cardMeaning, card.meaning)
+    card.renderData(cardName, "Name : ",card.name)
+    card.renderData(cardArcana,  "Arcana : ",card.arcana)
+    card.renderData(cardFortune,  "Fortune : ",card.fortune)
+    card.renderData(cardKeywords, "Keywords : ",card.keywordsArr)
+    card.renderData(cardMeaning, "Meaning : ",card.meaning)
   
 }
 
