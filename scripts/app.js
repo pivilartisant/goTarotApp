@@ -35,7 +35,6 @@ const cardMeaning = document.createElement('div');
   cardMeaning.setAttribute('class','card-meaning');
   document.body.appendChild(cardMeaning)
 
-
 const cardImg = document.createElement('img');
   cardImg.setAttribute('id','cardImg');
   cardImg.setAttribute('class','card-img');
