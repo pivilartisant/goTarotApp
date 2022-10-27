@@ -130,6 +130,8 @@ MAIN
   justify-content: center;
   align-content: center;
   align-items: center;
+
+  margin : 40px 0px 40px 0px;
 }
 
 .card-img-container{
@@ -184,10 +186,6 @@ MAIN
   color: var(--spookyOrange);
   border: 1px solid var(--backgroundColor);
   text-shadow: 1px 1px 5px var(--fontColor);
-}
-
-.spread-btn:active{
-  background-color: aqua;
 }
 
 .card-name, .card-arcana, .card-meaning, .card-keywords, .card-fortune{
