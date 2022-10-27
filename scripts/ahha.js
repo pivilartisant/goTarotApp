@@ -3,7 +3,7 @@ const audioBtn = document.getElementById('spread')
 var audio = new Audio('assets/thriller.mp3');
 
 audioBtn.addEventListener('click',()=>
-setTimeout(playMp3,1000))
+setTimeout(playMp3,800))
 
 
 function playMp3 (){
