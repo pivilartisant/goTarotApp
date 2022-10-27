@@ -61,6 +61,7 @@ getCards(requestCardURL);
 
   btn.addEventListener('click', () => {
     assignCards(randomCard());
+    // btn.remove()
   });  
 }
 
@@ -69,7 +70,7 @@ Defining my Card object
 ==========================*/
 
 //Creating objects 
-function assignCards(num){
+async function assignCards(num){
 
     class Deck {
       constructor(data){
@@ -110,6 +111,7 @@ function assignCards(num){
         }
       renderImg (imgSrc){
         cardImg.src = imgSrc
+        // audio.play()
       }
     }
 
@@ -134,7 +136,6 @@ Rendering my card
     card.renderData(cardFortune,  "Fortune : ",card.fortune)
     card.renderData(cardKeywords, "Keywords : ",card.keywordsArr)
     card.renderData(cardMeaning, "Meaning : ",card.meaning)
-  
 }
 
 /*==========================
