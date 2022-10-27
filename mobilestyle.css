@@ -150,8 +150,17 @@ MAIN
 
 .spread-btn{
 
-  width: 200px;
-  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  
+
+  /* width: 200px;
+  height: 60px; */
+
+  padding: 10px 30px 10px 30px;
 
   margin: 20px 0px 20px 0px;
 
@@ -159,15 +168,22 @@ MAIN
   font-family: 'Happy Halloween', sans-serif;
 
   background-color: transparent;
-  /* border: 3px solid black; */
-  border: none;
+  border: 1px solid var(--spookyOrange);
 
   border-radius: 30px;
   color: black;
 
   /* box-shadow: 1px 1px 10px #ff9900; */
-  text-shadow: 1px 1px 5px #ff9900;
+  text-shadow: 1px 1px 8px #ff9900;
 
+  transition: all 0.7s ease-in-out;
+
+}
+
+.spread-btn:hover{
+  color: var(--spookyOrange);
+  border: 1px solid var(--backgroundColor);
+  text-shadow: 1px 1px 5px var(--fontColor);
 }
 
 .card-name, .card-arcana, .card-meaning, .card-keywords, .card-fortune{
