@@ -186,6 +186,10 @@ MAIN
   text-shadow: 1px 1px 5px var(--fontColor);
 }
 
+.spread-btn:focus{
+  background-color: aqua;
+}
+
 .card-name, .card-arcana, .card-meaning, .card-keywords, .card-fortune{
   color: white
 }

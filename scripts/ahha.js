@@ -1,6 +1,6 @@
 const audioBtn = document.getElementById('spread')
 
-var audio = new Audio('../assets/thriller.mp3');
+var audio = new Audio('assets/thriller.mp3');
 
 audioBtn.addEventListener('mouseover',()=>
 audio.play())
