@@ -1,13 +1,13 @@
 .candle{
     position: absolute;
-    left: 100px;
+    /* left: 100px;  */
     text-shadow: 1px 1px 60px lightgoldenrodyellow;
     transition: all 4s ease-in-out;
 }
 
 .hover{
     position: absolute;
-    left: 100px;
+    /* left: 100px; */
     transform: translateY(200px);
     text-shadow: 1px 1px 10px lightgoldenrodyellow;
 }
