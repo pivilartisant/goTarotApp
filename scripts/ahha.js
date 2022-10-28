@@ -7,8 +7,9 @@ playMp3())
 
 
 function playMp3 (){
-    audioBtn.remove()
-    audio.play()
+    audioBtn.remove();
+    audio.volume = 0.5;
+    audio.play();
 }
 // console.log('audio')
 

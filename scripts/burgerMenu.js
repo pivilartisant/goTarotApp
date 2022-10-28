@@ -29,9 +29,7 @@ navLink3.addEventListener('click',()=> navClick());
 //this function removes a number of the classes that we're previously added 
 function navClick (){
     burgerMenu.classList.remove('active')
-    burgerTop.classList.remove('toggled')
-    burgerMid.classList.remove('toggled')
-    burgerBot.classList.remove('toggled')
+    burgerIcon.classList.remove('toggled')
     nav.classList.remove('active')
 }
 
