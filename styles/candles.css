@@ -1,13 +1,20 @@
 .candle{
     position: absolute;
     /* left: 100px;  */
-    text-shadow: 1px 1px 60px lightgoldenrodyellow;
-    transition: all 4s ease-in-out;
+    text-shadow: 1px 1px 10px lightgoldenrodyellow;
+    transition: all 3s ease-in-out;
 }
 
-.hover{
+.hoverDown{
     position: absolute;
     /* left: 100px; */
-    transform: translateY(200px);
-    text-shadow: 1px 1px 10px lightgoldenrodyellow;
+    transform: translateY(-50px);
+    text-shadow: 1px 1px 30px lightgoldenrodyellow;
+}
+
+.hoverUp{
+    position: absolute;
+    /* left: 100px; */
+    transform: translateY(50px);
+    text-shadow: 1px 1px 30px lightgoldenrodyellow;
 }
