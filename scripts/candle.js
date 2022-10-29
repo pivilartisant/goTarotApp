@@ -3,7 +3,7 @@ const candleContainer = document.getElementById('candle_container');
 let width = window.innerWidth;
 let height = window.innerHeight;
 
-let candlePara1 = document.getElementById('candle1')
+let candlePara1  = document.getElementById('candle1')
 let candlePara2  = document.getElementById('candle2')
 let candlePara3  = document.getElementById('candle3')
 let candlePara4  = document.getElementById('candle4')
@@ -52,11 +52,7 @@ function randomYPosition() {
     return Math.floor(Math.random() * (height-200)+100) + 'px';
 }
 
-// so i have a working script that injects a candle and animates it
-// i would like to generate a number of candle, store them into an array, for each candle in that array assign an x and y and use my animate Candle function accordingly 
-//The best way to do this would be to creat a candle object, and store eat instance of the object into my array 
-
-window.addEventListener('load',()=> animateCandle(), setInterval(animateCandle,2900))
+window.addEventListener('load',()=> animateCandle(), setInterval(animateCandle,2960))
 
 function animateCandle (){
     candlePara1.classList.toggle('hoverUp')
@@ -78,3 +74,7 @@ window.addEventListener("resize", resizeListener);
 OLD CODE
 ===============*/
 
+
+// so i have a working script that injects a candle and animates it
+// i would like to generate a number of candle, store them into an array, for each candle in that array assign an x and y and use my animate Candle function accordingly 
+//The best way to do this would be to creat a candle object, and store eat instance of the object into my array 

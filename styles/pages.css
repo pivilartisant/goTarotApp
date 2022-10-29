@@ -12,10 +12,17 @@
   --backgroundColor : black;
   --fontColor : black;
   --spookyOrange : #ff9900;
+
+scroll-behavior: smooth;
 }
 
 body{
 background-color: var(--backgroundColor);
+}
+
+a{
+  text-decoration: underline;
+  color: var(--spookyOrange);
 }
 
 /*=====
@@ -23,13 +30,20 @@ NAVBAR
 ======*/
 
 .nav-container{
+position: fixed;
+
   height : 64px;
   min-width: 100%;
 
   background-color: var(--backgroundColor);
+  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  border-bottom: solid 0.5px var(--spookyOrange);
+
+  overflow: hidden;
 }
 
 .title-container{
@@ -69,6 +83,7 @@ NAVBAR
 }
 
 .nav-list{
+  
   height: 100%;
 
   display: flex;
@@ -112,6 +127,7 @@ transition: all 0.4s ease-in-out;
 
 .active{
   transform: translateX(0%);
+  overflow: hidden;
 }
 
 .toggled{
@@ -130,16 +146,47 @@ MAIN
     align-items: center;
   
   
-    margin: 60px 0px 60px 0px;
+    margin: 120px 0px 60px 0px;
     max-width: 70%;
+
   }
   
   .text-content {
     text-align: center;
-  
+
+    margin-top: 20px;
     margin-bottom: 26px;
   
     font-size: 18px;
     font-family: 'Happy Halloween', sans-serif;
     color: var(--spookyOrange);
+
+    letter-spacing: 0.6px;
+  }
+
+  .teaser-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  
+    margin: 120px 0px 60px 0px;
+    max-width: 70%;
+  }
+
+  .teaser-content {
+    text-align: center;
+
+    position: relative;
+    top:200px;
+
+    margin-top: 20px;
+    margin-bottom: 26px;
+  
+    font-size: 28px;
+    font-family: 'Happy Halloween', sans-serif;
+    color: var(--spookyOrange);
+
+    letter-spacing: 0.6px;
   }
