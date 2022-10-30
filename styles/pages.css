@@ -23,6 +23,7 @@ background-color: var(--backgroundColor);
 a{
   text-decoration: underline;
   color: var(--spookyOrange);
+  cursor: pointer;
 }
 
 /*=====

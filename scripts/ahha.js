@@ -15,8 +15,8 @@ function playMp3 (){
     candlePara6.remove();
     candlePara7.remove();
 
-    // audio.volume = 0.3;
-    // audio.play();
+    audio.volume = 0.3;
+    audio.play();
 }
 // console.log('audio')
 
