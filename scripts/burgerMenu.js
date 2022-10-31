@@ -19,8 +19,6 @@ function burgerClick (){
     burgerIcon.classList.toggle('toggled')
 }
 
-
-
 //click on nav event listeners 
 navLink1.addEventListener('click',()=> navClick());
 navLink2.addEventListener('click',()=> navClick());

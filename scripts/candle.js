@@ -70,11 +70,6 @@ function resizeListener() {
 }
 window.addEventListener("resize", resizeListener);
   
-/*============
-OLD CODE
-===============*/
-
-
 // so i have a working script that injects a candle and animates it
 // i would like to generate a number of candle, store them into an array, for each candle in that array assign an x and y and use my animate Candle function accordingly 
 //The best way to do this would be to creat a candle object, and store eat instance of the object into my array 

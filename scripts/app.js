@@ -152,7 +152,7 @@ function cardMeaningRotation(data){
     cardImg.setAttribute('class','upright__card')
     return `${data.light}`;
   } else { 
-    // cardPosition = "Reversed";
+
     cardImg.setAttribute('class','reversed__card')
     return`${data.shadow}`;
   }

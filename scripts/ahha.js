@@ -18,7 +18,5 @@ function playMp3 (){
     audio.volume = 0.3;
     audio.play();
 }
-// console.log('audio')
 
-// audio.play()
 
